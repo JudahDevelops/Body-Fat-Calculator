@@ -11,15 +11,15 @@
         <h1>Body Fat% Calculator</h1>
         <label for="weight">
             <p>Weight:</p>
-            <input type="number" id="weight" placeholder="kilograms">
+            <input type="number" id="weight" placeholder="kilograms" max="1000" min="5" required>
         </label>
         <label for="height">
             <p>Height:</p>
-            <input type="number" id="height" placeholder="metres">
+            <input type="number" id="height" placeholder="metres" max="3.4" min="0.1" required>
         </label>
         <label for="age">
             <p>Age:</p>
-            <input type="number" id="age" placeholder="years">
+            <input type="number" id="age" placeholder="years" min="1" max="121" required>
         </label>
         <div id="calculate">
             Calculate

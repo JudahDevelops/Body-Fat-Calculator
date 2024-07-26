@@ -13,7 +13,7 @@ function calcBF() {
 
 
 calcButton.addEventListener("click", () => {
-   result.innerHTML = calcBF();
+   result.innerHTML = Math.floor(calcBF());
    results.style.display = "block";
 });
 
