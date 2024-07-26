@@ -1,6 +1,7 @@
 const calcButton = document.querySelector("#calculate");
 const result = document.querySelector("#results");
 const resetButton = document.querySelector("#reset");
+const results = document.querySelector("#show-results")
 
 function calcBF() {
     const weight = parseInt(document.querySelector("#weight").value);
@@ -13,6 +14,7 @@ function calcBF() {
 
 calcButton.addEventListener("click", () => {
    result.innerHTML = calcBF();
+   results.style.display = "block";
 });
 
 resetButton.addEventListener("click", () => {

@@ -7,14 +7,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #c04b4b;
+}
+
 html {
     font-size: 16px;
 }
 
 form {
-    background-color: yellow;
     width: fit-content;
-    margin: 4em auto 2em;
+    margin: 4em auto 0.2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -25,7 +28,10 @@ form {
 
 form h1 {
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
+    font-size: 2.6em;
+    font-style: italic;
+    color: var(--text-color);
 }
 
 form label {
@@ -34,27 +40,52 @@ form label {
     flex-direction: column;
     justify-content: center;
     gap: 0.5em;
+    color: var(--text-color);
+    font-style: italic;
+    font-weight: bold;
 }
 
 form label input {
-    height: 2em;
+    height: 2.6em;
     width: 16em;
+    padding: 1em;
+    border: none;
+    border: 3px solid var(--text-color);
+    border-radius: 7px;
 }
 
 #calculate {
-    background-color: blue;
-    padding: 1em 2em;
-    border-radius: 5px;
-    margin-top: 2em;
+    background-color: var(--text-color);
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.6em 2em;
+    border-radius: 19px;
+    margin-top: 0.7em;
     color: white;
+    border: 3px solid var(--text-color);
+    transition: all 0.4s;
+}
+
+#calculate:hover {
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: white;
 }
 
 #show-results {
-    background-color: brown;
     width: fit-content;
     margin: auto;
     padding: 1em 2em;
     text-align: center;
+}
+
+#show-results h2 {
+    
+}
+
+#show-results p {
+    display: inline;
 }
 
 #reset {
