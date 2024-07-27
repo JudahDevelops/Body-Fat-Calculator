@@ -9,20 +9,33 @@
 <body>
     <form>
         <h1>Body Fat% Calculator</h1>
-        <label for="weight">
-            <p>Weight:</p>
-            <input type="number" id="weight" placeholder="kilograms" max="1000" min="5" required>
-        </label>
-        <label for="height">
-            <p>Height:</p>
-            <input type="number" id="height" placeholder="metres" max="3.4" min="0.1" required>
-        </label>
-        <label for="age">
-            <p>Age:</p>
-            <input type="number" id="age" placeholder="years" min="1" max="121" required>
-        </label>
-        <div id="calculate">
-            Calculate
+        <div id="form-inputs">
+            <label for="weight">
+                <p>Weight:</p>
+                <input type="number" id="weight" placeholder="kilograms" max="1000" min="5" required>
+            </label>
+            <label for="height">
+                <p>Height:</p>
+                <input type="number" id="height" placeholder="metres" max="3.4" min="0.1" required>
+            </label>
+            <label for="age">
+                <p>Age:</p>
+                <input type="number" id="age" placeholder="years" min="1" max="121" required>
+            </label>
+            <article>
+                <h2>Gender:</h2>
+                <label for="male">
+                    Male
+                    <input type="radio" id="male" name="gender" value="male">
+                </label>
+                <label for="female">
+                    Female
+                    <input type="radio" id="female" name="gender" value="female">
+                </label>
+            </article>
+            <div id="calculate">
+                Calculate
+            </div>
         </div>
     </form>
     <div id="show-results">
